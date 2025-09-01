@@ -8,6 +8,7 @@ jobs:
   checkin:
     runs-on: windows-latest
     environment: production
+    if: github.ref == 'refs/heads/deploy'
     env:
       PYTHONIOENCODING: utf-8
     steps:
